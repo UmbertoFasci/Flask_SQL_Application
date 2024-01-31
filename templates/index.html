@@ -5,7 +5,7 @@
     <div class="content">
         {% for student in students %}
             <div class="student">
-                <p><b>#{{ student.id }}</b></p>
+                <p><b>ID: {{ student.id }}</b></p>
                 <b>
                     <p class="name">
                         <a href="{{ url_for('student', student_id=student.id)}}">
